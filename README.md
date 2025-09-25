@@ -7,11 +7,10 @@
     Calabi-yau 6D manifold 
     xxXyyYzzZ Small middle Big 
 
-    26 + 26 + 26 = 78 letter
-    based on 5202 62 7
+    Squid Go
     Octopus python 
     Cutterfish haskell 
-    Squid Go
+    
 <img width="1200" height="846" alt="image" src="https://github.com/user-attachments/assets/894feb66-a73f-4e59-ad2f-e209aeac5501" />
 <img width="345" height="345" alt="image" src="https://github.com/user-attachments/assets/92f1cedc-194c-428b-8ff7-fc9bc6fa6b87" />
 <img width="345" height="345" alt="image" src="https://github.com/user-attachments/assets/1f0d94cf-0150-4a9f-af93-b4b10d648888" />
@@ -259,6 +258,14 @@ Go(运动协调) ← SQL(记忆查询) ← C(基础生理维持)
 | **生活方式** | **独居**，底栖，常在洞穴或礁石中 | **喜群居**，底栖，擅长伪装 | **活跃游泳者**，常在中上层水域 |
 | **游泳方式** | 以爬行为主，喷水推进用于短距离逃跑 | 优雅的波浪式鳍游泳，喷水推进辅助 | 主要靠喷水推进，速度快 |
 | **智商与行为** | **极高**，以使用工具、解决问题闻名 | **很高**，是伪装大师，沟通复杂 | 聪明，但更多是条件反射 |
+
+
+
+
+
+
+
+
 
 ---
 
