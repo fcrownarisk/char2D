@@ -15,6 +15,7 @@
 <img width="345" height="345" alt="image" src="https://github.com/user-attachments/assets/92f1cedc-194c-428b-8ff7-fc9bc6fa6b87" />
 <img width="345" height="345" alt="image" src="https://github.com/user-attachments/assets/1f0d94cf-0150-4a9f-af93-b4b10d648888" />
 好的，这是一个非常有趣且常见的简化模型，主要用于帮助理解大脑的主要功能分区。根据神经科学的常见分类，除了连接两侧大脑半球的**胼胝体**和内分泌腺体**松果体**外，我们可以将大脑的核心功能区分为以下六个主要区域：
+
 下图直观地展示了这六个核心脑区及其主要功能：
 ```mermaid
 flowchart TD
