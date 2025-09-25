@@ -55,7 +55,7 @@ changeCamouflage cuttlefish newPattern = do
     putStrLn " !!！"
     return cuttlefish { currentPattern = newPattern }
 
--- 显示当前模式 - 体现Haskell的不可变性
+-- Haskell
 displayPattern :: Cuttlefish -> String
 displayPattern cf = 
     "" ++ name cf ++ "" ++ patternDescription (currentPattern cf)
@@ -87,9 +87,9 @@ generateDynamicPattern complexity = do
 
 main :: IO ()
 main = do
-    putStrLn "=== Haskell 墨鱼模拟器 ===\n"
+    putStrLn "=== Haskell ===\n"
     
-    let cuttlefish = createCuttlefish "卡米洛" 1 0.92
+    let cuttlefish = createCuttlefish 1 0.92
     
     putStrLn $ ": " ++ show cuttlefish
     putStrLn $ ": " ++ displayPattern cuttlefish
@@ -110,3 +110,4 @@ main = do
         patternDescription (Dynamic ps) = " " ++ show (length ps) ++ " "
 
         patternDescription p = show p
+
