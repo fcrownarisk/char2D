@@ -88,7 +88,7 @@ class Octopus:
 def main()
     
     octopus = Octopus(
-        name="",
+        name="Opus",
         age=2,
         intelligence=0.85,
         camouflage_ability=0.95
