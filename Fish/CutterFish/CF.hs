@@ -106,4 +106,3 @@ main = do
         patternDescription (Dynamic ps) = "\\\" " ++ show (length ps) ++ "/// "
         
         patternDescription p = show p
-
