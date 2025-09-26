@@ -87,13 +87,11 @@ generateDynamicPattern complexity = do
 
 main :: IO ()
 main = do
-    putStrLn "=== Haskell ===\n"
     
     let cuttlefish = createCuttlefish 1 0.92
     
     putStrLn $ ": " ++ show cuttlefish
     putStrLn $ ": " ++ displayPattern cuttlefish
-    putStrLn ""
 
     let newPattern = Stripes [Red, Orange, Yellow]
     updatedCuttlefish <- changeCamouflage cuttlefish newPattern
@@ -102,11 +100,9 @@ main = do
     
     let effectiveness = calculateCamouflageEffectiveness updatedCuttlefish newPattern
     putStrLn $ ": " ++ show effectiveness
-    putStrLn ""
-
     complexPattern <- generateDynamicPattern 3
     putStrLn $ ": " ++ patternDescription complexPattern
     where
-        patternDescription (Dynamic ps) = " " ++ show (length ps) ++ " "
-
+        patternDescription (Dynamic ps) = "\\\ " ++ show (length ps) ++ "/// "
+        
         patternDescription p = show p
