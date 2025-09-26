@@ -5,12 +5,12 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import List, Dict, Optional
 
-class CamouflagePattern(Enum):
-    ROCK = "rock"
-    CORAL = "coral" 
-    SAND = "sand"
-    ALGAE = "algae"
-    DANGER = "danger_flash"
+class Object(Enum):
+    w = "water"
+    air = "AIR"
+    sun = "SUN"
+    food = "FOOD"
+    stone = "STONE"
 
 class ProblemSolvingSkill(Enum):
     OPEN_JAR = "open_jar"
@@ -67,11 +67,11 @@ class Octopus:
     
     def explore_environment(self, environment: str) -> None:
         self.current_environment = environment
-        print(f"🌊 {self.name} 正在探索 {environment}")
+        print(f"🌊 {self.name} exploring {environment}")
         
         observations = [
-            f"发现{item}" for item in 
-            ["珊瑚", "贝壳", "小鱼", "洞穴", "海藻"]
+            f"{item}" for item in 
+            ["sea", "lake", "river", "stream", "ocean"]
         ]
         
         actions = [
