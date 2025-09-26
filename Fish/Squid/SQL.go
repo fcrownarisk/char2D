@@ -10,7 +10,7 @@ import (
 type Squid struct {
 	Name          string
 	Age           int
-	Speed         float64 
+	Speed         float32
 	JetPower      float64 
 	School        *School
 	Position      Position
@@ -71,7 +71,7 @@ func (s *Squid) Swim(destination Position, wg *sync.WaitGroup) {
 		s.Name, destination.X, destination.Y, destination.Z)
 }
 
-// JetEscape 喷水逃跑 - 并发处理
+// JetEscape
 func (s *Squid) JetEscape(predatorPosition Position, wg *sync.WaitGroup) {
 	defer wg.Done()
 
@@ -88,12 +88,7 @@ func (s *Squid) JetEscape(predatorPosition Position, wg *sync.WaitGroup) {
 
 	go func() {
 		time.Sleep(500 * time.Millisecond)
-		escapeCh <- "释放墨汁迷惑敌人"
-	}()
-
-	go func() {
-		time.Sleep(300 * time.Millisecond)
-		escapeCh <- "高速喷水推进"
+		escapeCh <- ""
 	}()
 
 	for i := 0; i < 2; i++ {
@@ -101,7 +96,7 @@ func (s *Squid) JetEscape(predatorPosition Position, wg *sync.WaitGroup) {
 		fmt.Printf("   🎯 %s: %s\n", s.Name, action)
 	}
 
-	fmt.Printf("   🔥 %s 以%.1fm/s速度成功逃脱！方向: %.1f, %.1f, %.1f\n",
+	fmt.Printf("%.1f, %.1f, %.1f, %.1f\n",
 		s.Name, escapeSpeed, escapeDirection.X, escapeDirection.Y, escapeDirection.Z)
 }
 
@@ -127,7 +122,7 @@ func (s *Squid) JoinSchool(school *School) {
 	
 	s.School = school
 	school.Members = append(school.Members, s)
-	fmt.Printf("🐟 %s 加入了 %s 鱼群\n", s.Name, school.Name)
+	fmt.Printf("🐟 %s joined %s\n", s.Name, school.Name)
 }
 
 func (s *School) SchoolSwim(destination Position) {
@@ -161,12 +156,12 @@ func main() {
 	squid1.JoinSchool(school)
 	fmt.Println()
 
-	destination := Position{X: 100, Y: 50, Z: -20}
+	destination := Position{X: 2, Y: 4, Z: 8}
 	school.SchoolSwim(destination)
 	fmt.Println()
 
 	var wg sync.WaitGroup
-	predator := Position{X: 110, Y: 60, Z: -15}
+	predator := Position{X: 3, Y: 6, Z: 9}
 
 	fmt.Println("")
 	wg.Add(3)
