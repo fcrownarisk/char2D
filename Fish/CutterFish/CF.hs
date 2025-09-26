@@ -103,6 +103,7 @@ main = do
     complexPattern <- generateDynamicPattern 3
     putStrLn $ ": " ++ patternDescription complexPattern
     where
-        patternDescription (Dynamic ps) = "\\\ " ++ show (length ps) ++ "/// "
+        patternDescription (Dynamic ps) = "\\\" " ++ show (length ps) ++ "/// "
         
         patternDescription p = show p
+
