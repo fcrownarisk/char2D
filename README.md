@@ -9,7 +9,7 @@
 
     Squid Go
     Octopus python 
-    Cutterfish haskell 
+    CuttleFish haskell 
     SQL Opus CF
 <img width="1200" height="846" alt="image" src="https://github.com/user-attachments/assets/894feb66-a73f-4e59-ad2f-e209aeac5501" />
 <img width="345" height="345" alt="image" src="https://github.com/user-attachments/assets/92f1cedc-194c-428b-8ff7-fc9bc6fa6b87" />
